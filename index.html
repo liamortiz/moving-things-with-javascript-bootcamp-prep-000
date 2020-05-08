@@ -20,6 +20,11 @@
           var left = parseInt(left_nums, 10)
           dodger.style.left = `${left - 1}px`
         }
+        if (e.which === 38) {
+          var left_nums = dodger.style.left.replace('px', '')
+          var left = parseInt(left_nums, 10)
+          dodger.style.left = `${left + 1}px`
+        }
       })
       
     </script>
